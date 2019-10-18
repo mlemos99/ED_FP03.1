@@ -25,7 +25,7 @@ public class ED_FP_03 {
         nova.pop();
         nova.pop();
         nova.pop();
-       
+
         System.out.println(nova.toString());
     }
 

@@ -10,10 +10,11 @@ package Exercicio1;
  * @author Utilizador
  */
 class EmptyCollectionException extends Exception {
-    public EmptyCollectionException(){
+
+    public EmptyCollectionException() {
         super();
     }
-    
+
     public EmptyCollectionException(String message) {
         super(message);
     }

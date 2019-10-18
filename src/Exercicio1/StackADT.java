@@ -10,27 +10,27 @@ package Exercicio1;
  * @author Utilizador
  */
 public interface StackADT<T> {
+
     /**
      * Adiciona um elemento ao topo da stack.
+     *
      * @param element element que vai ser adicionado na stack
      */
     public void push(T element);
-    
+
     /**
-     * 
-     * @return 
+     *
+     * @return
      */
     public T pop() throws EmptyCollectionException;
-    
+
     public T peek() throws EmptyCollectionException;
-    
+
     public boolean isEmpty();
-    
+
     public int size();
 
     @Override
     public String toString();
-    
-    
-    
+
 }
