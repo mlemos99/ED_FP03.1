@@ -20,9 +20,9 @@ public interface StackADT<T> {
      * 
      * @return 
      */
-    public T pop();
+    public T pop() throws EmptyCollectionException;
     
-    public T peek();
+    public T peek()throws EmptyCollectionException;
     
     public boolean isEmpty();
     

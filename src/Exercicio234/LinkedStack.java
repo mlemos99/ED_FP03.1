@@ -65,13 +65,13 @@ public class LinkedStack<T> implements Exercicio234.StackADT<T>{
 
     /**
      * Metodo que remove o elemento armazenado no primeiro nó da lista
+     * @throws 
      */
     @Override
-    public T pop() {
-        
+    public T pop() throws EmptyCollectionException  {
         
         if (isEmpty()) {
-            return null;
+            throw new EmptyCollectionException("Stack");
         } else {
             LinearNode<T> current = head;
             LinearNode<T> nodeAux = head;
@@ -91,9 +91,9 @@ public class LinkedStack<T> implements Exercicio234.StackADT<T>{
 
     }
     @Override
-     public T peek() {
+     public T peek() throws EmptyCollectionException {
         if(this.isEmpty()){
-            return null;
+            throw new EmptyCollectionException("Stack");
         }
         return this.head.getElemento();
     }

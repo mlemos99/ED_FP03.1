@@ -14,7 +14,7 @@ public class ED_FP_03 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws EmptyCollectionException {
         ArrayStack<Integer> nova = new ArrayStack<>();
         nova.push(10);
         nova.push(11);
@@ -22,7 +22,10 @@ public class ED_FP_03 {
         nova.push(20);
         System.out.println(nova.toString());
         System.out.println("-------------------------");
-        //nova.pop();
+        nova.pop();
+        nova.pop();
+        nova.pop();
+       
         System.out.println(nova.toString());
     }
 
